@@ -16,15 +16,17 @@ export default function App() {
     <BrowserRouter>
       <Flowbite>
         <Header />
-        {/* <Navbar /> */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sign-in" element={<Signin />} />
-          <Route path="/sign-up" element={<SignUp />} />
-          <Route path="/problems" element={<Problems />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/create-problem" element={<CreateProblems />} />
-        </Routes>
+        <div className= "flex flex-col min-h-screen w-full bg-slate-500 text-gray-950 dark:bg-slate-900 dark:text-neutral-500">
+          {/* <Navbar /> */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/sign-in" element={<Signin />} />
+            <Route path="/sign-up" element={<SignUp />} />
+            <Route path="/problems" element={<Problems />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/create-problem" element={<CreateProblems />} />
+          </Routes>
+        </div>
         {/* <Footer heading="Footerrr" /> */}
       </Flowbite>
     </BrowserRouter>
